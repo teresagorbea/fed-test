@@ -60,5 +60,20 @@
 
 /* Begin styling the report items here! */
 .reports {
+ display: grid;
+ gap: 30px;
+ grid-template-columns: repeat(3, 1fr);
+ justify-content: space-evenly;
+}
 
+@media only screen and (max-width: 768px){
+  .reports{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .reports{
+    grid-template-columns: 100%;
+  }
 }
